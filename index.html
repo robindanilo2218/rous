@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo de Rous | Alta Costura y Confección</title>
+    <!-- Tailwind CSS para el diseño rápido y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts para tipografías elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rous: {
+                            light: '#fdf8f5',
+                            DEFAULT: '#d4a373', // Un tono dorado/tierra elegante
+                            dark: '#bc6c25',
+                            rose: '#b76e79', // Rose gold
+                        },
+                        dark: '#2b2b2b'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Animación suave para el botón de WhatsApp */
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .whatsapp-float {
+            animation: pulse-soft 2s infinite;
+        }
+        .whatsapp-float:hover {
+            animation: none;
+            transform: scale(1.1);
+        }
+        /* Efecto parallax suave para el fondo */
+        .bg-parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="font-sans bg-rous-light text-gray-800 antialiased">
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/50250132082?text=Hola%20Mundo%20de%20Rous,%20me%20gustaría%20cotizar%20una%20prenda." 
+       class="whatsapp-float fixed bottom-6 right-6 bg-[#25d366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 transition-transform duration-300"
+       target="_blank" 
+       title="Escríbenos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ENCABEZADO / HERO SECTION -->
+    <header class="relative h-[85vh] flex items-center justify-center text-center bg-parallax" style="background-image: url('https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&q=80');">
+        <!-- Capa oscura para que el texto resalte -->
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        
+        <div class="relative z-10 px-4 max-w-4xl mx-auto">
+            <p class="text-rous-DEFAULT font-serif text-xl italic mb-4 tracking-wider">Alta Costura & Diseño Exclusivo</p>
+            <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 drop-shadow-lg">Mundo de Rous</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 font-light max-w-2xl mx-auto">
+                Confección a medida para cada momento especial. Vestidos de gala, uniformes profesionales y ropa casual con acabados de primera.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <!-- Botón de Cotizar que lleva al WhatsApp -->
+                <a href="https://wa.me/50250132082?text=Hola,%20quisiera%20una%20cotización" target="_blank" class="bg-rous-rose hover:bg-pink-700 text-white px-8 py-3 rounded-full font-bold tracking-wide transition-colors duration-300 shadow-lg">
+                    <i class="fas fa-file-invoice-dollar mr-2"></i> Cotizar Ahora
+                </a>
+                <!-- Botón de Llamar -->
+                <a href="tel:+50250132082" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-dark px-8 py-3 rounded-full font-bold tracking-wide transition-colors duration-300 shadow-lg">
+                    <i class="fas fa-phone-alt mr-2"></i> Llamar: 5013 2082
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-serif text-dark mb-4">Nuestros Servicios</h2>
+            <div class="w-24 h-1 bg-rous-rose mx-auto rounded"></div>
+            <p class="mt-4 text-gray-600">Diseñamos y confeccionamos prendas para cualquier ocasión y profesión.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-rous-rose hover:-translate-y-2 transition-transform duration-300 text-center">
+                <div class="w-16 h-16 bg-rous-light rounded-full flex items-center justify-center mx-auto mb-6 text-rous-rose text-2xl">
+                    <i class="fas fa-glass-cheers"></i>
+                </div>
+                <h3 class="text-xl font-serif font-bold text-dark mb-3">Eventos Especiales</h3>
+                <p class="text-gray-600">Vestidos deslumbrantes para fiestas, graduaciones, matrimonios y celebraciones. Hechos a tu medida para que seas el centro de atención.</p>
+            </div>
+            
+            <!-- Servicio 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-rous-DEFAULT hover:-translate-y-2 transition-transform duration-300 text-center">
+                <div class="w-16 h-16 bg-rous-light rounded-full flex items-center justify-center mx-auto mb-6 text-rous-DEFAULT text-2xl">
+                    <i class="fas fa-user-nurse"></i>
+                </div>
+                <h3 class="text-xl font-serif font-bold text-dark mb-3">Uniformes Profesionales</h3>
+                <p class="text-gray-600">Confección impecable y cómoda para doctores, enfermeras, escuelas y personal corporativo. Durabilidad garantizada.</p>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-rous-dark hover:-translate-y-2 transition-transform duration-300 text-center">
+                <div class="w-16 h-16 bg-rous-light rounded-full flex items-center justify-center mx-auto mb-6 text-rous-dark text-2xl">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <h3 class="text-xl font-serif font-bold text-dark mb-3">Ropa Casual y Más</h3>
+                <p class="text-gray-600">Blusas, pantalones, camisas y conjuntos de diario. Reparaciones y ajustes para que tu ropa favorita te quede perfecta.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE PRENDAS Y PRECIOS -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif text-dark mb-4">Galería de Creaciones</h2>
+                <div class="w-24 h-1 bg-rous-rose mx-auto rounded"></div>
+                <p class="mt-4 text-gray-600">Ejemplos de nuestro trabajo. Los precios varían según tela y diseño específico.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Foto 1 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-md">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80" alt="" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6 pt-20">
+                        <h3 class="text-white font-serif text-xl font-bold">Vestidos de Gala</h3>
+                        <p class="text-rous-DEFAULT font-bold mt-1">Cotizar precio <i class="fas fa-arrow-right text-sm"></i></p>
+                    </div>
+                </div>
+
+                <!-- Foto 2 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-md">
+                    <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&q=80" alt="" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6 pt-20">
+                        <h3 class="text-white font-serif text-xl font-bold">Uniformes Médicos</h3>
+                        <p class="text-rous-DEFAULT font-bold mt-1">Desde Q.00.00</p>
+                    </div>
+                </div>
+
+                <!-- Foto 3 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-md">
+                    <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&q=80" alt="" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6 pt-20">
+                        <h3 class="text-white font-serif text-xl font-bold">Blusas a Medida</h3>
+                        <p class="text-rous-DEFAULT font-bold mt-1">Desde Q.00.00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <p class="text-sm text-gray-500 italic">* Visita nuestro perfil en Google Maps para ver fotos subidas por nuestros clientes felices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN Y CONTACTO -->
+    <section class="py-20 bg-rous-light px-4">
+        <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+            
+            <!-- Info de Contacto -->
+            <div class="bg-dark text-white p-10 md:w-1/3 flex flex-col justify-center">
+                <h2 class="text-3xl font-serif mb-6">Visítanos</h2>
+                <p class="text-gray-300 mb-8">Estamos listas para tomar tus medidas y confeccionar la prenda de tus sueños.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-rous-rose flex items-center justify-center mr-4">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">Teléfono</p>
+                            <a href="tel:+50250132082" class="font-bold hover:text-rous-rose transition">+502 5013 2082</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-rous-DEFAULT flex items-center justify-center mr-4">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">WhatsApp</p>
+                            <a href="https://wa.me/50250132082" target="_blank" class="font-bold hover:text-rous-DEFAULT transition">Enviar Mensaje</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-gray-700">
+                        <!-- Botón hacia Google Maps -->
+                        <a href="https://maps.app.goo.gl/GxYoQZrWyyDQ458Q8?g_st=ac" target="_blank" class="block text-center bg-[#4285F4] hover:bg-blue-600 text-white py-3 rounded-xl font-bold transition-colors shadow-lg">
+                            <i class="fas fa-map-marker-alt mr-2"></i> Abrir en Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa Interactivo -->
+            <div class="md:w-2/3 h-80 md:h-auto">
+                <!-- Se usa un iframe genérico de Guatemala Centro para diseño. Idealmente ella puede generar el código 'embed' desde su propio local en Google Maps -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15437.199320865768!2d-90.5132!3d14.6349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sgt!4v1700000000000!5m2!1ses!2sgt" 
+                    class="w-full h-full border-0" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center py-8">
+        <p class="text-rous-DEFAULT font-serif text-2xl mb-2">Mundo de Rous</p>
+        <p class="text-gray-500 text-sm">&copy; 2026 Mundo de Rous. Diseño de Alta Costura. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
